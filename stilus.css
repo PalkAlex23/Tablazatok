@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+main {
+    max-width: 900px;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "as"
+    "as2"
+    "f";
+    background-color: rgb(255, 118, 141);
+}
+
+aside {
+    grid-area: as;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#as2 {
+    margin: auto;
+}
+
+#tb1 {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#tb2 {
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+
+#tb2 tr:nth-child(odd){
+    background-color: gray;
+}
+
+#tb2 td {
+    border: 1px solid rgb(61, 61, 61);
+    padding: 20px;
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+}
